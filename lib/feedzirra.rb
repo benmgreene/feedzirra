@@ -10,13 +10,16 @@ require 'active_support/version'
 require 'active_support/basic_object'
 require 'active_support/core_ext/module'
 require 'active_support/core_ext/kernel'
-require 'active_support/core_ext/object'
+# require 'active_support/core_ext/object'
+require 'active_support/core_ext'
+require 'active_support/time'
 
-if ActiveSupport::VERSION::MAJOR >= 3
-  require 'active_support/time'
-else
-  require 'active_support/core_ext/time'
-end
+
+#if ActiveSupport::VERSION::MAJOR >= 3
+#  require 'active_support/time'
+#else
+#  require 'active_support/core_ext/time'
+#end
 
 require 'core_ext/date'
 require 'core_ext/string'
